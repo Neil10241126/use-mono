@@ -1,2 +1,5 @@
 # Dependencies
 node_modules
+
+# turbo
+.turbo
