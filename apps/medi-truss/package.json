@@ -2,11 +2,12 @@
   "name": "medi-truss",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "next": "15.2.2"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "typescript": "5.8.2",
     "@types/node": "22.13.9",
