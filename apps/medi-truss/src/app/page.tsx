@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { IconButton, BaseButton } from "@repo/ui/buttons";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+        <BaseButton/>
+        <IconButton/>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
